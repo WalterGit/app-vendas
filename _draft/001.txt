@@ -1,0 +1,14 @@
+/app
+  /routes
+    emails.tsx          // Corresponde à rota "/emails"
+    email
+      $emailId.tsx      // Corresponde à rota "/email/:id" para detalhes do produto
+      new.tsx             // Corresponde à rota "/email/new" para adicionar um novo produto
+      $emailId
+        edit.tsx          // Corresponde à rota "/email/:id/edit" para editar um produto existente
+
+mkdir -p app/routes/email\+/email &&
+touch "app/routes/email+/emails.tsx" &&
+touch "app/routes/email+/email/new.tsx" &&
+touch "app/routes/email+/email/\$emailId.tsx" &&
+touch "app/routes/email+/email/\$emailId.edit.tsx"
